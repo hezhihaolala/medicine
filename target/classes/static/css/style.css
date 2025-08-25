@@ -1,0 +1,190 @@
+/* 自定义样式 */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* 卡片样式 */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.5rem;
+}
+
+.card-header {
+    border-bottom: 1px solid #dee2e6;
+    background-color: #f8f9fa !important;
+}
+
+/* 表格样式 */
+.table-responsive {
+    border-radius: 0.5rem;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.table td {
+    vertical-align: middle;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table td[title] {
+    cursor: help;
+}
+
+/* 分页样式 */
+.pagination {
+    margin-bottom: 0;
+}
+
+.page-link {
+    border-radius: 0.375rem;
+    margin: 0 2px;
+    border: 1px solid #dee2e6;
+}
+
+.page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* 过滤表单样式 */
+.form-select, .form-control {
+    border-radius: 0.375rem;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* 按钮样式 */
+.btn {
+    border-radius: 0.375rem;
+    font-weight: 500;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* 加载和空状态样式 */
+#loadingState, #emptyState {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 模态框样式 */
+.modal-content {
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* 列设置复选框 */
+#columnCheckboxes {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.column-checkbox {
+    margin-bottom: 0.5rem;
+}
+
+.column-checkbox .form-check-input {
+    margin-top: 0.25rem;
+}
+
+.column-checkbox .form-check-label {
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+    
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+    
+    .btn {
+        font-size: 0.875rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+/* 工具提示样式 */
+.tooltip {
+    font-size: 0.75rem;
+}
+
+/* 排序指示器 */
+.sortable {
+    cursor: pointer;
+    position: relative;
+}
+
+.sortable:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sortable::after {
+    content: '\f0dc';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 8px;
+    opacity: 0.5;
+}
+
+.sortable.asc::after {
+    content: '\f0de';
+    opacity: 1;
+}
+
+.sortable.desc::after {
+    content: '\f0dd';
+    opacity: 1;
+}
+
+/* 高亮搜索结果 */
+.highlight {
+    background-color: #fff3cd;
+    border-radius: 0.25rem;
+    padding: 0.125rem 0.25rem;
+}
+
+/* 数据统计样式 */
+.stats-badge {
+    background-color: #e7f3ff;
+    color: #0066cc;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
